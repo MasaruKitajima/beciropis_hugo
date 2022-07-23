@@ -1,0 +1,14 @@
+{
+  "git.repositoryScanIgnoredFolders": [
+    "node_modules",
+    "themes"
+  ],
+  "projectManager.git.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    ".haxelib",
+    "themes"
+  ]
+}
