@@ -32,10 +32,6 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
-# themes
-themes/
-themes/ananke/
-
 # Temporary lock file while building
 /.hugo_build.lock
 
