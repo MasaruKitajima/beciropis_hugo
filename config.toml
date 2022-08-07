@@ -1,37 +1,28 @@
 baseURL = 'https://be-curious.prime-kobo.com'
 languageCode = 'ja'
-title = '好奇心大事だよ？'
-theme = "ananke"
-resourceDir = "./resources"
+title = "Not to stop questioning!"
+theme = "hugo_theme_robust"
 
-DefaultContentLanguage = "ja"
-SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
-
-[languages]
-  [languages.ja]
-    title = "好奇心大事だよ？"
-    weight = 2
-    contentDir = "content/ja"
-  [languages.en]
-    title = "Curiosity is important, isn't it?"
-    weight = 2
-    contentDir = "content/en"
-    # languageDirection = 'rtl' for Right-To-Left languages
-
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+# googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+disqusShortname = "not-to-stop-questioning"
 
 [params]
-  text_color = "white"
-  author = "Masaru Kitajima"
-  favicon = ""
-  site_logo = ""
-  description = "The last theme you'll ever need. Maybe."
-  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  recent_posts_number = 3
+description = "Never lose a holy curiosity. Don't stop to marvel."
+dateformat = "Jan 2, 2006" # Optional
+# Fonts settings.
+googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
+fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
+logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+
+enableHighlight = true # highlight.js option
+
+[params.author]
+thumbnail = "images/author.jpg"
+name = "Masaru Kitajima"
+description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+facebook = "https://www.facebook.com/daisuke.tsuji.735"
+twitter = "https://twitter.com/dim0627"
+github = "https://github.com/dim0627"
+
+[outputs]
+page = [ "HTML", "AMP" ] # if you want AMP enable.
