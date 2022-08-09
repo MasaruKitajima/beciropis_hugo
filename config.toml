@@ -3,7 +3,7 @@ languageCode = 'ja'
 title = "Not to stop questioning!"
 theme = "hugo_theme_robust"
 
-# googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+googleAnalytics = "G-RV126CFWFW" # Optional(GA4)
 disqusShortname = "not-to-stop-questioning"
 
 [params]
@@ -19,10 +19,10 @@ enableHighlight = true # highlight.js option
 [params.author]
 thumbnail = "images/author.jpg"
 name = "Masaru Kitajima"
-description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-facebook = "https://www.facebook.com/daisuke.tsuji.735"
-twitter = "https://twitter.com/dim0627"
-github = "https://github.com/dim0627"
+# description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+# facebook = "https://www.facebook.com/daisuke.tsuji.735"
+# twitter = "https://twitter.com/dim0627"
+# github = "https://github.com/dim0627"
 
 [outputs]
 page = [ "HTML", "AMP" ] # if you want AMP enable.
