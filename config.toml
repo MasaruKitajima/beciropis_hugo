@@ -26,3 +26,15 @@ name = "Masaru Kitajima"
 
 [outputs]
 page = [ "HTML", "AMP" ] # if you want AMP enable.
+
+[taxonomies]
+tag = "tags"
+category = "categories”
+
+## カテゴリーを指定する際のサンプル
+# content/posts/hugo-book.md
+# ---
+# title: "I've published Hugo book"
+# categories: ["Tech", "Book"]
+# ---
+
