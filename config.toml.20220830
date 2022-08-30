@@ -1,32 +1,32 @@
-baseURL = "https://example.com"
-
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-title = "Hugo Techdoc Theme"
+baseURL = 'https://be-curious.prime-kobo.com'
+languageCode = 'ja'
+DefaultContentLanguage = "ja"
+title = "Not to stop questioning!"
 theme = "hugo-theme-techdoc"
+
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 [params]
 
     # Source Code repository section
-    description = "put your description"
-    github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    description = "Never lose a holy curiosity... Don't stop to marvel."
+    github_repository = "https://github.com/MasaruKitajima/becurious_hugo"
     version = "0.9.9"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    github_doc_repository = "https://github.com/MasaruKitajima/becurious_hugo"
     github_doc_repository_path = ""
 
     # Analytic section
-    google_analytics_id = "" # Your Google Analytics tracking id
-    tag_manager_container_id = "" # Your Google Tag Manager container id
+    google_analytics_id = "G-RV126CFWFW" # Your Google Analytics tracking id
+    tag_manager_container_id = "GTM-KH5MN4H" # Your Google Tag Manager container id
     google_site_verification = "" # Your Google Site Verification for Search Console
 
     # Open Graph and Twitter Cards settings section
@@ -124,3 +124,15 @@ enableMissingTranslationPlaceholders = false
         "tags",
         "categories",
     ]
+
+[taxonomies]
+tag = "tags"
+category = "categories”
+
+## カテゴリーを指定する際のサンプル
+# content/posts/hugo-book.md
+# ---
+# title: "I've published Hugo book"
+# categories: ["Tech", "Book"]
+# ---
+
