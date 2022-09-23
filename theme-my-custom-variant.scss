@@ -1,0 +1,53 @@
+//colors
+$color_lima_approx: #7dc903;
+$color_indigo_approx: #486ac9;
+$color_cod_gray_approx: #101010;
+$color_jacksons_purple_approx: #202891;
+$white: #ffffff;
+$color_masala_approx: #4a4a4a;
+$black: #000000;
+$color_alabaster_approx: #f8f8f8;
+$color_alto_approx: #d8d8d8;
+$color_dorado_approx: #5e5e5e;
+$color_early_dawn_approx: #fffae9;
+$color_champagne_approx: #f8e8c8;
+$mine_shaft: #323232;
+$gray: #808080;
+$color_mercury_approx: #e0e0e0;
+$color_mine_shaft_approx: #282828;
+$black_16_6: rgba(0, 0, 0, .166 );
+$color_silver_approx: #bababa;
+$color_dove_gray_approx: #606060;
+$white_100: rgba(255, 255, 255, 1 );
+$white_83_3: rgba(255, 255, 255, .833 );
+
+:root {
+	--PRIMARY-color: $color_lima_approx;
+	--SECONDARY-color: $color_indigo_approx;
+	--MAIN-TEXT-color: $color_cod_gray_approx;
+	--MAIN-LINK-HOVER-color: $color_jacksons_purple_approx;
+	--MAIN-BG-color: $white;
+	--MAIN-TITLES-TEXT-color: $color_masala_approx;
+	--CODE-BLOCK-color: $black;
+	--CODE-BLOCK-BG-color: $color_alabaster_approx;
+	--CODE-BLOCK-BORDER-color: $color_alto_approx;
+	--CODE-INLINE-color: $color_dorado_approx;
+	--CODE-INLINE-BG-color: $color_early_dawn_approx;
+	--CODE-INLINE-BORDER-color: $color_champagne_approx;
+	--MERMAID-theme: default;
+	--SWAGGER-theme: light;
+	--MENU-HOME-LINK-color: $mine_shaft;
+	--MENU-HOME-LINK-HOVER-color: $gray;
+	--MENU-SEARCH-color: $color_mercury_approx;
+	--MENU-SEARCH-BG-color: $mine_shaft;
+	--MENU-SEARCH-BORDER-color: $color_mercury_approx;
+	--MENU-SECTIONS-BG-color: $color_mine_shaft_approx;
+	--MENU-SECTIONS-ACTIVE-BG-color: $black_16_6;
+	--MENU-SECTIONS-LINK-color: $color_silver_approx;
+	--MENU-SECTIONS-LINK-HOVER-color: $white;
+	--MENU-SECTION-ACTIVE-CATEGORY-color: $color_mine_shaft_approx;
+	--MENU-SECTION-HR-color: $color_dove_gray_approx;
+	--BOX-CAPTION-color: $white_100;
+	--BOX-BG-color: $white_83_3;
+	--BOX-TEXT-color: $color_cod_gray_approx;
+}
