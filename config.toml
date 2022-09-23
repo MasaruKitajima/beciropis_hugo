@@ -1,50 +1,56 @@
-baseURL = "https://example.com"
+baseURL = "https://be-curious.prime-kobo.com"
 
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-title = "Hugo Techdoc Theme"
+languageCode = "ja"
+DefaultContentLanguage = "ja"
+title = "疑問を持つことをやめちゃダメ！"
 theme = "hugo-theme-techdoc"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
+
+[author]
+    name = "M.Kita"
+    bio = "IT業界の隅っこに1982年から生息したロートル"
+    job = "Personal Lecturere"
+    location = "Japan"
 
 [params]
 
     # Source Code repository section
-    description = "put your description"
-    github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    description = "世の中を見て「なぜだろう？」と思う事をやめた時に進歩が止まる。探究心とは神聖なものです。"
+    github_repository = "https://github.com/MasaruKitajima/becurious_hugo.git"
     version = "0.9.9"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
-    github_doc_repository_path = ""
+    #github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    #github_doc_repository_path = ""
 
     # Analytic section
-    google_analytics_id = "" # Your Google Analytics tracking id
-    tag_manager_container_id = "" # Your Google Tag Manager container id
-    google_site_verification = "" # Your Google Site Verification for Search Console
+    #google_analytics_id = "" # Your Google Analytics tracking id
+    #tag_manager_container_id = "" # Your Google Tag Manager container id
+    #google_site_verification = "" # Your Google Site Verification for Search Console
 
     # Open Graph and Twitter Cards settings section
     # Open Graph settings for each page are set on the front matter.
     # See https://gohugo.io/templates/internal/#open-graph
     # See https://gohugo.io/templates/internal/#twitter-cards
-    title = "Hugo Techdoc Theme"
-    images = ["images/og-image.png"] # Open graph images are placed in `static/images`
+    #title = "Hugo Techdoc Theme"
+    #images = ["images/og-image.png"] # Open graph images are placed in `static/images`
 
     # Theme settings section
     # Theme color
     # See color value reference https://developer.mozilla.org/en-US/docs/Web/CSS/color
-    custom_font_color = ""
-    custom_background_color = ""
+    #custom_font_color = ""
+    #custom_background_color = ""
 
     # Documentation Menu section
     # Menu style settings
-    menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
+    menu_style = "slide-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
 
     # Date format
     dateformat = "" # default "2 Jan 2006"
@@ -62,10 +68,10 @@ enableMissingTranslationPlaceholders = false
 
     # Algolia site search section
     # See https://www.algolia.com/doc/
-    algolia_search_enable = true
-    algolia_indexName = "hugo-demo-techdoc"
-    algolia_appId = "7W4SAN4PLK"
-    algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
+    #algolia_search_enable = true
+    #algolia_indexName = "hugo-demo-techdoc"
+    #algolia_appId = "7W4SAN4PLK"
+    #algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
 
 # Global menu section
 # See https://gohugo.io/content-management/menus/
@@ -75,17 +81,29 @@ enableMissingTranslationPlaceholders = false
         url = "/"
         weight = 1
         identifier = 'home'
-        pre = "<i class='fa fa-heart'></i>&nbsp;"
+        pre = '<i class="fas fa-house"></i>'
 
     [[menu.main]]
-        name = "Twitter"
-        url = "https://twitter.com/thingsym"
+        name = "Categories"
+        url = "/categories"
         weight = 2
-        identifier = 'twitter'
-        pre = "<b>pre!</b> "
-        post = " <b>post!</b>"
-        [menu.main.params]
-          class = 'twitter-menu-item'
+        identifier = 'categories'
+        pre = '<i class="fas fa-bookmark"></i>'
+
+
+    [[menu.main]]
+        name = "Tags"
+        url = "/tags"
+        weight = 3
+        identifier = 'tags'
+        pre = '<i class="fas fa-tags"></i>'
+
+    [[menu.main]]
+        name = "About"
+        url = "/#about"
+        weight = 4
+        identifier = 'about'
+        pre = '<i class="fas fa-question"></i>'
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
@@ -99,14 +117,14 @@ enableMissingTranslationPlaceholders = false
         ordered = false
 
 [outputs]
-    home = ["HTML", "RSS", "Algolia"]
+    home = ["HTML", "RSS"] #, "Algolia"]
 
 # Algolia Search configure section
-[outputFormats.Algolia]
-    baseName = "algolia"
-    mediaType = "application/json"
-    isPlainText = true
-    notAlternative = true
+#[outputFormats.Algolia]
+#    baseName = "algolia"
+#    mediaType = "application/json"
+#    isPlainText = true
+#    notAlternative = true
 
 [params.algolia]
     vars = [
