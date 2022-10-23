@@ -68,10 +68,10 @@ enableMissingTranslationPlaceholders = false
 
     # Algolia site search section
     # See https://www.algolia.com/doc/
-    #algolia_search_enable = true
-    #algolia_indexName = "hugo-demo-techdoc"
-    #algolia_appId = "7W4SAN4PLK"
-    #algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
+    algolia_search_enable = true
+    algolia_indexName = "be-curious"
+    algolia_appId = "YTFIPBND06"
+    algolia_apiKey = "152bd26a61004c05a93d14fb924e2ebc" # Search-Only API Key
 
 # Global menu section
 # See https://gohugo.io/content-management/menus/
@@ -117,14 +117,14 @@ enableMissingTranslationPlaceholders = false
         ordered = false
 
 [outputs]
-    home = ["HTML", "RSS"] #, "Algolia"]
+    home = ["HTML", "RSS", "Algolia"]
 
 # Algolia Search configure section
-#[outputFormats.Algolia]
-#    baseName = "algolia"
-#    mediaType = "application/json"
-#    isPlainText = true
-#    notAlternative = true
+[outputFormats.Algolia]
+    baseName = "algolia"
+    mediaType = "application/json"
+    isPlainText = true
+    notAlternative = true
 
 [params.algolia]
     vars = [
